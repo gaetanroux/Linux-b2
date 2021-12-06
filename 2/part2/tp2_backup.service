@@ -1,0 +1,10 @@
+[Unit]
+Description=Script Backup et compression
+
+[Service]
+ExecStart=/srv/tp2_backup.sh /srv/backup/web.tp2.linux /var/www/
+Type=oneshot
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Our own lil backup service (TP3)
+
+[Service]
+ExecStart=[dossier dans lequel ce trouve le script] <DESTINATION> <DOSSIER>
+Type=oneshot
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target
+
